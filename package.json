@@ -13,7 +13,7 @@
     "app:build": "yarn tauri build",
     "prompts": "node ./scripts/fetch-prompts.mjs",
     "prepare": "husky install",
-    "proxy-dev": "sh ./scripts/init-proxy.sh && proxychains -f ./scripts/proxychains.conf yarn dev"
+    "proxy-dev": "sh ./scripts/init-proxy.sh && proxychains -f ./scripts/proxychains.conf yarn dev && npm run lint"
   },
   "dependencies": {
     "@fortaine/fetch-event-source": "^3.0.6",
@@ -57,7 +57,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^3.0.2",
     "typescript": "5.2.2",
-    "webpack": "^5.88.1"
+    "webpack": "^5.88.1","actions":{"install":"npm ci --silent"}
   },
   "resolutions": {
     "lint-staged/yaml": "^2.2.2"
