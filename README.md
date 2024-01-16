@@ -1,7 +1,16 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
-<h1 align="center">ChatGPT Next Web</h1>
+<name: ChatGPT-Next-Web CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:>ChatGPT Next Web</h1>
 
 English / [简体中文](./README_CN.md)
 
@@ -97,6 +106,30 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 - 🚀 v2.9.11 现在可以使用自定义 Azure 服务了。
 
 ## Get Started
+
+## GitHub Actions Workflow
+
+The GitHub Actions Workflow is responsible for automating various tasks and processes within this project. To ensure its smooth functioning, it requires the following environment variables and secrets to be set up:
+
+- `OPENAI_API_KEY`: Your OpenAI API Key
+
+You can run the workflow by following the steps mentioned in the section 'Running GitHub Actions Workflow' above. The workflow will be triggered on a new code push to your forked repository.
+
+This project uses GitHub Actions to perform automated tasks and processes. To ensure the workflow functions correctly, you'll need to set up the following environment variables and secrets:
+
+- `OPENAI_API_KEY`: Your OpenAI API Key
+
+You can run the GitHub Actions Workflow by following the steps mentioned in the section 'Running GitHub Actions Workflow' above. The workflow will be triggered on a new code push to your forked repository.
+
+### Running GitHub Actions Workflow
+
+To run the GitHub Actions Workflow, follow these steps:
+
+1. Fork this repository.
+2. Create a new OpenAI API Key at [OpenAI](https://platform.openai.com/account/api-keys).
+3. Go to the 'Settings' of your forked repository and navigate to the 'Secrets' section.
+4. Add a new secret named 'OPENAI_API_KEY' and paste your OpenAI API Key as the value.
+5. The workflow will now be triggered on a new code push to your forked repository.
 
 > [简体中文 > 如何开始使用](./README_CN.md#开始使用)
 
