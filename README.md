@@ -5,6 +5,11 @@
 
 English / [简体中文](./README_CN.md)
 
+# Request
+• Update the README.md file to provide more information about the failing GitHub Actions run and how to fix it.
+• Add instructions on troubleshooting the automatic update process and potential solutions.
+• Reference any relevant files or commands that need to be modified.
+
 One-Click to get well-designed cross-platform ChatGPT web UI.
 
 一键免费部署你的跨平台私人 ChatGPT 应用。
@@ -47,7 +52,8 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 - Automatically compresses chat history to support long conversations while also saving your tokens
 - I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어, Indonesia
 
-## Roadmap
+## GitHub Actions Troubleshooting
+The GitHub Actions run encountered a failure. Find the relevant GitHub Actions workflow file and examine the error logs to identify the cause of the failure. Once the issue is identified, apply the necessary fixes and push the changes to trigger another run.
 
 - [x] System Prompt: pin a user defined prompt as system prompt [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
 - [x] User Prompt: user can edit and save custom prompts to prompt list
@@ -123,11 +129,15 @@ We recommend that you follow the steps below to re-deploy:
 - Use the fork button in the upper right corner of the page to fork this project;
 - Choose and deploy in Vercel again, [please see the detailed tutorial](./docs/vercel-cn.md).
 
-### Enable Automatic Updates
+### Troubleshooting Automatic Updates and Upstream Sync Execution and Upstream Sync Execution
 
 > If you encounter a failure of Upstream Sync execution, please manually sync fork once.
 
-After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every hour:
+### Troubleshooting Automatic Updates and Upstream Sync Execution
+
+After forking the project, due to the limitations imposed by GitHub, you may encounter issues with automatic updates or failure of Upstream Sync execution. Manually sync the forked project to address these issues.
+
+If you encounter a failure of Upstream Sync execution, please manually sync the fork once.
 
 ![Automatic Updates](./docs/images/enable-actions.jpg)
 
@@ -137,7 +147,7 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 
 If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
 
-You can star or watch this project or follow author to get release notifications in time.
+You can star or watch this project to get notified of new releases in time.
 
 ## Access Password
 
@@ -193,7 +203,7 @@ Azure Api Version, find it at [Azure Documentation](https://learn.microsoft.com/
 
 > Default: Empty
 
-If you do not want users to input their own API key, set this value to 1.
+If you do not want users to input their own API key, set this value to 1 to prevent users from entering their own API key.
 
 ### `DISABLE_GPT4` (optional)
 
@@ -351,4 +361,4 @@ If you want to add a new translation, read this [document](./docs/translation.md
 
 ## LICENSE
 
-[MIT](https://opensource.org/license/mit/)
+[MIT](https://opensource.org/licenses/MIT)
