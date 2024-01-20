@@ -2,7 +2,8 @@
 ## Prerequisites
 - GitHub account
 - Your own ChatGPT-Next-Web server set up
-- [UpStash](https://upstash.com)
+- UpStash account
+- Configuration: UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN, and synchronization settings
 
 ## Getting Started
 1. Register for an UpStash account.
@@ -28,4 +29,4 @@
 
 5. Success!
 
-   ![Great job~!](./images/upstash-7.png)
+   ![UpStash Synchronization Completed](./images/upstash-7.png)

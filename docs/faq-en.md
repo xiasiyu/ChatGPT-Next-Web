@@ -83,14 +83,18 @@ Note that when you disable this feature, all resources will be loaded on the use
 
 # Usage Related Questions
 
-## Why does it always prompt "An error occurred, please try again later"
+## Why does the GitHub Actions run fail
 
 There could be many reasons, please check the following in order:
 
-- First, check if your code version is the latest version, update to the latest version and try again;
+- First, check if the workflow file is correctly configured and references the correct branch;
+- Ensure that the provided secrets and environment variables are correctly set and have the necessary permissions;
 - Check if the api key is set correctly, the environment variable name must be uppercase with underscores;
 - Check if the api key is available;
-- If you still cannot determine the problem after going through the above steps, please submit a new issue in the issue area and attach the runtime log of vercel or the log of docker runtime.
+- If you still cannot determine the problem after going through the above steps, follow these steps to check the error logs and debug the issue:
+- For GitHub Actions, view the workflow run logs to identify errors and warnings;
+- Check the workflow file for syntax errors, incorrect references, or conditions that may cause the failure;
+- Attach the relevant error logs to a new issue in the issue area to request assistance.
 
 ## Why does ChatGPT's reply get garbled
 

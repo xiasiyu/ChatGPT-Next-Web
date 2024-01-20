@@ -1,4 +1,9 @@
-import { BuiltinMask } from "./typing";
+// Define English masks based on the provided snippets
+
+// Example:
+// export const EN_MASKS: BuiltinMask[] = [
+//   {...}
+// ];
 
 export const EN_MASKS: BuiltinMask[] = [
   {

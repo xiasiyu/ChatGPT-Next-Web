@@ -13,7 +13,7 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 7. In "Build Settings", choose the "Framework presets" option and select "Next.js".
 8. Do not use the default "Build command" due to a node:buffer bug. Instead, use the following command:
    ```
-   npx @cloudflare/next-on-pages --experimental-minify
+   npx @cloudflare/next-on-pages
    ```
 9. For "Build output directory", use the default value and do not modify it.
 10. Do not modify "Root Directory".
@@ -29,6 +29,10 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 
     - `CODE= Optional, access passwords, multiple passwords can be separated by commas`
     - `OPENAI_ORG_ID= Optional, specify the organization ID in OpenAI`
+    - `DISABLE_FAST_LINK=1 Optional, disable parse settings from URL`
+    - `OPENAI_SB=1 Optional, use the third-party OpenAI-SB API`
+    - `DISABLE_FAST_LINK=1 Optional, disable parse settings from URL`
+    - `OPENAI_SB=1 Optional, use the third-party OpenAI-SB API`
     - `HIDE_USER_API_KEY=1 Optional, do not allow users to enter their own API key`
     - `DISABLE_GPT4=1 Optional, do not allow users to use GPT-4`
     - `ENABLE_BALANCE_QUERY=1 Optional, allow users to query balance`
