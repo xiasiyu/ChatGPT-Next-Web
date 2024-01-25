@@ -18,7 +18,9 @@
 
    ![Copy](./images/upstash-4.png)
 
-4. Copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN into your synchronization configuration, then click **Check Availability**.
+4. Copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN from UpStash into your synchronization configuration, ensuring you do not share the token. Then click **Check Availability** to verify. 
+
+Reference the `app/masks/typing.ts` file for the `BuiltinMask` type.
 
     ![Synchronize 1](./images/upstash-5.png)
 
