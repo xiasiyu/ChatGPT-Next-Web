@@ -12,6 +12,7 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 6. For "Project name" and "Production branch", use the default values or change them as needed.
 7. In "Build Settings", choose the "Framework presets" option and select "Next.js".
 8. Do not use the default "Build command" due to a node:buffer bug. Instead, use the following command:
+   npx @cloudflare/next-on-pages --experimental-minify
    ```
    npx @cloudflare/next-on-pages --experimental-minify
    ```
