@@ -44,8 +44,8 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
     - `OPENAI_SB=1 Optional，use the third-party OpenAI-SB API`
 
 12. Click "Save and Deploy".
-13. Click "Cancel deployment" because you need to fill in Compatibility flags.
-14. Go to "Build settings", "Functions", and find "Compatibility flags".
-15. Fill in "nodejs_compat" for both "Configure Production compatibility flag" and "Configure Preview compatibility flag".
+13. Click "Cancel deployment" because you need to fill in Compatibility flags and fill in the necessary compatibility flags details as instructed below..
+14. Go to "Build settings,", "Functions", and find "Compatibility flags".
+15. Fill in "-  `nodejs_compat`: Enables Node.js compatibility mode" for both "Configure Production compatibility flag" and "Configure Preview compatibility flag".
 16. Go to "Deployments" and click "Retry deployment".
 17. Enjoy.
