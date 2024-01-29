@@ -12,8 +12,16 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 6. For "Project name" and "Production branch", use the default values or change them as needed.
 7. In "Build Settings", choose the "Framework presets" option and select "Next.js".
 8. Do not use the default "Build command" due to a node:buffer bug. Instead, use the following command:
+   npx @cloudflare/next-on-pages --experimental-minify
    ```
    npx @cloudflare/next-on-pages --experimental-minify
+      - `CODE= Optional, access passwords, multiple passwords can be separated by commas`
+      - `OPENAI_ORG_ID= Optional, specify the organization ID in OpenAI`
+      - `HIDE_USER_API_KEY=1 Optional, do not allow users to enter their own API key`
+      - `DISABLE_GPT4=1 Optional, do not allow users to use GPT-4`
+      - `ENABLE_BALANCE_QUERY=1 Optional, allow users to query balance`
+      - `DISABLE_FAST_LINK=1 Optional, disable parse settings from url`
+      - `OPENAI_SB=1 Optional，use the third-party OpenAI-SB API`
    ```
 9. For "Build output directory", use the default value and do not modify it.
 10. Do not modify "Root Directory".
@@ -36,8 +44,8 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
     - `OPENAI_SB=1 Optional，use the third-party OpenAI-SB API`
 
 12. Click "Save and Deploy".
-13. Click "Cancel deployment" because you need to fill in Compatibility flags.
-14. Go to "Build settings", "Functions", and find "Compatibility flags".
-15. Fill in "nodejs_compat" for both "Configure Production compatibility flag" and "Configure Preview compatibility flag".
+13. Click "Cancel deployment" because you need to fill in Compatibility flags and fill in the necessary compatibility flags details as instructed below..
+14. Go to "Build settings,", "Functions", and find "Compatibility flags".
+15. Fill in "-  `nodejs_compat`: Enables Node.js compatibility mode" for both "Configure Production compatibility flag" and "Configure Preview compatibility flag".
 16. Go to "Deployments" and click "Retry deployment".
 17. Enjoy.
