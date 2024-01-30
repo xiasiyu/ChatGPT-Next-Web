@@ -1,4 +1,4 @@
-# Synchronize Chat Logs with UpStash
+# Synchronize Chat Logs with UpStash and GitHub Actions
 ## Prerequisites
 - GitHub account
 - Your own ChatGPT-Next-Web server set up
@@ -18,7 +18,8 @@
 
    ![Copy](./images/upstash-4.png)
 
-4. Copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN into your synchronization configuration, then click **Check Availability**.
+4. - Ensure that the GitHub Actions workflow file is updated with the appropriate environment variables.
+- Copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN into your synchronization configuration in the GitHub Actions workflow file, then click **Check Availability**.
 
     ![Synchronize 1](./images/upstash-5.png)
 
