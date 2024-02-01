@@ -9,10 +9,22 @@
 2. Create a database.
 
     ![Register and Login](./images/upstash-1.png)
-
+    
     ![Create Database](./images/upstash-2.png)
-
+    
     ![Select Server](./images/upstash-3.png)
+    
+    ![Copy](./images/upstash-4.png)
+    
+    ![Synchronize 1](./images/upstash-5.png)
+    
+    If everything is in order, you've successfully completed this step.
+    
+    ![Sync Availability Check Completed](./images/upstash-6.png)
+    
+    Success!
+    
+    ![Great job~!](./images/upstash-7.png)
 
 3. Find the REST API and copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN (⚠Important⚠: Do not share your token!)
 
